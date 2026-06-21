@@ -1,6 +1,6 @@
 # CBR Internship pipeline
 
-## The pipeline is designed to include the following files:
+## The pipeline is designed to include the following files, with their corresponding fucntionalities:
 
 1. split_vcf.sh:
  -	This script takes in the main .vcf.gz file as input, counts the number of variants, and divides them by 100.
