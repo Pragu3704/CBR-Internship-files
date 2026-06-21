@@ -1,4 +1,7 @@
-# CBR Internship files
+# CBR Internship pipeline
+
+## The pipeline is designed to include the following files:
+
 1. split_vcf.sh:
 -	This script takes in the main .vcf.gz file as input, counts the number of variants, and divides them by 100.
 -	The header file for the subsequent.vcf.gz chunks is isolated beforehand, prior to the variant counting.
@@ -27,21 +30,24 @@
 -	This script outputs a .txt file with all such missing variants. It has been made to compare a particular population across particular possible combinations mentioned.
 
 5. merge_csv2.sh:
-   - This script merges all the .csv files after their formation for specific popnames mentioned.
+- This script merges all the .csv files after their formation for specific popnames mentioned.
 
 6. final2.sh:
-   - This is the final script that contains the complete pipeline that needs to be executed to get the final outputs.
+- This is the final script that contains the complete pipeline that needs to be executed to get the final outputs.
 
 7. final2.sbatch:
 -	This is the SLURM script to schedule any infocalc jobs.
 -	All echoes from all the .sh scripts, part of the pipeline, are written into the infocalc.log file.
 
 8. vcf_to_str_big.py:
-   - This script processes the .str file using the .vcf.gz chunk and popmap files.
-   - This script is much more efficient than vcf_to_str_big_backup.py.
+- This script processes the .str file using the .vcf.gz chunk and popmap files.
+- This script is much more efficient than vcf_to_str_big_backup.py.
 
 8b. vcf_to_str_big_backup.py:
-   - To be used if vcf_to_str_big.py is giving errors.
+- To be used if vcf_to_str_big.py is giving errors.
 
 9. infocalc.pl:
-   - The main infocalc script. Script taken from https://rosenberglab.stanford.edu/software/infocalc
+- The main infocalc script. Script taken from https://rosenberglab.stanford.edu/software/infocalc
+
+## Execution:
+Based on resource requirements, optimise the parameters in the .sbatch file, if u wish to execute the pipeline on a HPC cluster. You may execute only the final2.sh file in the case of regular PC specs. Please follow the comments as required to make sure all the files are named correctly, and the required files are created in the correct location.  
