@@ -5,7 +5,7 @@ set -euo pipefail
 CHUNK_DIR="/gpfs/data/user/pragathi/chr21_infocalc/EUR_chr21/split_vcf" ##Change
 POPMAP_DIR="/gpfs/data/user/pragathi/chr21_infocalc/EUR_chr21/popmap" ##Change
 OUT_BASE="/gpfs/data/user/pragathi/chr21_infocalc/EUR_chr21/out_str" ##Change
-VCF_TO_STR_SCRIPT=/gpfs/data/user/pragathi/chr21_infocalc/EUR_chr21/vcf_to_str_big.py" ##Change
+VCF_TO_STR_SCRIPT="/gpfs/data/user/pragathi/chr21_infocalc/EUR_chr21/vcf_to_str_big.py" ##Change
 INFOCALC_SCRIPT="/gpfs/data/user/pragathi/chr21_infocalc/EUR_chr21/infocalc.pl" ##Change
 
 
