@@ -4,8 +4,8 @@ set -euo pipefail
 
 # Configuration
 TARGET_POP="EUR"  # Set the population you want to process (e.g., SAS, AFR, etc.), must be consistent with one used in str_info2.sh, validate2.sh, mismatch_csv2.sh
-RESULT_DIR=/gpfs/data/user/cherishma/chr21_infocalc/EUR_chr21/out_str" ##Change
-MERGE_DIR="/gpfs/data/user/cherishma/chr21_infocalc/EUR_chr21/infocalc_output” ##Change
+RESULT_DIR="/gpfs/data/user/pragathi/chr21_infocalc/EUR_chr21/out_str" ##Change
+MERGE_DIR="/gpfs/data/user/pragathi/chr21_infocalc/EUR_chr21/infocalc_output” ##Change
 
 
 # Ensure output directory exists

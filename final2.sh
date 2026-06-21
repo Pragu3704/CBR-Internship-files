@@ -14,7 +14,7 @@ export PATH=$HOME/openssl-1.1/bin:$PATH
 
 
 
-SCRIPT_DIR="/gpfs/data/user/cherishma/chr21_infocalc/EUR_chr21" ##Change
+SCRIPT_DIR="/gpfs/data/user/pragathi/chr21_infocalc/EUR_chr21" ##Change
 LOG_FILE="$SCRIPT_DIR/infocalc.log"
 
 

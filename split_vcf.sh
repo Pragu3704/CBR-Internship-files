@@ -5,9 +5,9 @@ trap 'echo "Error on line $LINENO"; exit 1' ERR
 
 
 
-VCF="/gpfs/data/user/cherishma/chr21_infocalc/merged_vcf/EUR_chr21.vcf.gz"    ##Change
+VCF="/gpfs/data/user/pragathi/chr21_infocalc/merged_vcf/EUR_chr21.vcf.gz"    ##Change
 VCF="$(readlink -f "$VCF")"
-OUTDIR="/gpfs/data/user/cherishma/chr21_infocalc/EUR_chr21/split_vcf" ##Change
+OUTDIR="/gpfs/data/user/pragathi/chr21_infocalc/EUR_chr21/split_vcf" ##Change
 TMPDIR="$OUTDIR/tmp_chunks"
 HEADER="$OUTDIR/header.vcf"
 

@@ -1,8 +1,8 @@
 #!/bin/bash
 
 
-VCF_DIR="/gpfs/data/user/cherishma/chr21_infocalc/EUR_chr21/split_vcf" ##Change
-OUT_DIR="/gpfs/data/user/cherishma/chr21_infocalc/EUR_chr21/out_str" ##Change
+VCF_DIR="/gpfs/data/user/pragathi/chr21_infocalc/EUR_chr21/split_vcf" ##Change
+OUT_DIR="/gpfs/data/user/pragathi/chr21_infocalc/EUR_chr21/out_str" ##Change
 RESULT_DIR="$OUT_DIR/out_str" ##Change
 MISMATCH_FILE="$OUT_DIR/mismatch_csv.txt" ##Change
 
