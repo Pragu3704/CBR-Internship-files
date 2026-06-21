@@ -20,7 +20,7 @@
  -	These files will be stored in the respective out_str subdirectories corresponding to the popname of the .str and .csv files (SAS, EAS, EUR, AFR, and AMR).
  -	The .str files are deleted immediately after the .csv file is made to prevent memory issues.
  -	In the presence of non-empty .csv files, the processing of .str and .csv file formation is skipped, and the script only processes in the case of missing files corresponding to the .vcf.gz chunk number (001, 002, etc.) and popname.
-
+<br>
 
 3. validate2.sh:
  -	This script performs a validation check to see if all .str and .csv files are present for the specified popnames and regenerates any missing files.
