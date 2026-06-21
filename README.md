@@ -1,10 +1,10 @@
 # CBR Internship pipeline
 
-## The pipeline is designed to include the following files, with their corresponding fucntionalities:
+## The pipeline is designed to include the following files, with their corresponding functionalities:
 
 1. split_vcf.sh:
  -	This script takes in the main .vcf.gz file as input, counts the number of variants, and divides them by 100.
- -	The header file for the subsequent.vcf.gz chunks is isolated beforehand, prior to the variant counting.
+ -	The header file for the subsequent .vcf.gz chunks is isolated beforehand, before the variant counting.
  -	This code proceeds to make temporary chunks of variants, followed by packaging them into .vcf.gz chunk files, which will be stored in the appropriate split_vcf directory. Each file will be named popname_chr(number)_xxx.vcf.gz, where xxx is a 0-padded number (like 001, 002, etc).
  -	The temp files are deleted once each .vcf.gz file is formed and packaged.
  -	In case the chunks already exist in the form of .vcf.gz files and are non-empty, the script skips splitting altogether, making it easier to resume other scripts in case of code failure or computer resource limitations.
@@ -14,7 +14,7 @@
 
 2. str_info2.sh:
  -	This script processes .str files from the .vcf.gz chunks based on the provided popmap files. 
- -	This is done with the help of a Python script vcf_to_str_big.py.
+ -	This is done with the help of a Python script, vcf_to_str_big.py.
  -	Each file will be named out_popname_chr(number)_xxx.str, where xxx is the corresponding chunk number.
  -	Followed by this step is the running of the infocalc.pl script on the .str files to generate result files of the form result_popname_chr(number)_xxx.csv.
  -	These files will be stored in the respective out_str subdirectories corresponding to the popname of the .str and .csv files (SAS, EAS, EUR, AFR, and AMR).
@@ -59,4 +59,4 @@
 <br>
 
 ## Execution:
-Based on resource requirements, optimise the parameters in the .sbatch file, if u wish to execute the pipeline on a HPC cluster. You may execute only the final2.sh file in the case of regular PC specs. Please follow the comments as required to make sure all the files are named correctly, and the required files are created in the correct location.  
+Based on resource limitations, optimise the parameters in the .sbatch file, if u wish to execute the pipeline on a HPC cluster. You may execute only the final2.sh file in the case of regular PC specs. Please follow the comments as required to make sure all the files are named correctly, and the required files are created in the correct location.  
